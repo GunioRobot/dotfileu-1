@@ -1,0 +1,78 @@
+#
+
+# skip the startup message
+startup_message off
+
+# go to home dir
+chdir
+
+# start with visual bell as default
+vbell on
+vbell_msg "bell on %t (%n)"
+##bell "bell in %n (%t)"
+##vbell_msg " *beep* "
+
+# look and feel
+caption always "%{= bb}%{+b w}%n %h %=%t %c"
+#caption string "%{= dd}"
+hardstatus alwayslastline "%-Lw%{= BW}%50>%n%f* %t%{-}%+Lw%<"
+#hardstatus alwayslastline "%w"
+#hardstatus alwayslastline " %c | %Y%m%d |  %w"
+#hardstatus alwayslastline "\033[m\033[42;30m %m%d \033[m \033[42;30m%c\033[m \033[42;30m %w \033[m"
+#hardstatus lastline " [%{b}tomsflat%{d}] | %n [%{r}%t%{d}] %W | %m/%d/%Y | %c"
+#hardstatus alwayslastline " %m%d \033[42;30m%c\033[m \033[42;30m %w \033[m"
+#hardstatus alwayslastline " %m%d %c \033[42;30m %w \033[m"
+#hardstatus alwayslastline "%{yb} %l %d/%m %c %{gb} %w %{dd}"
+##hardstatus alwayslastline "%{yb} %d/%m %c %{gb} %w %{= dd}"
+
+
+activity "Activity in %t(%n)"
+
+defscrollback 5000
+
+shelltitle "zshell"
+
+defescape x
+escape x
+
+#startup_message off
+autodetach on
+#crlf off
+deflogin on
+login on
+#hardcopy_append on
+#silencewait 15
+
+# sorendition 10 99 # default!
+# sorendition 02 40 # green  on black
+#sorendition 02 34 # yellow on blue
+##activity "activity in %n (%t)"
+#bindkey -k kh stuff \033[7~
+#bindkey -k kH stuff \033[8~
+#bindkey -k @7 stuff \033[8~
+#terminfo screen '@7=\E[8%dm:kh=\E[7%dm'
+#terminfo screen 'ka1=\e[7:kc1=\e[8'
+#terminfo screen 'khome=\E[7~:kend=\e[8~:ka1=\e[7~:kc1=\e[8~'
+##term xterm
+##defbce on
+# Do not use xterms alternate window buffer. 
+# This does disable the scrollback buffer tho :(
+#termcap xterm|xterms|xs ti=\E7\E[?47l
+#terminfo xterm|xterms|xs ti=\E7\E[?47l
+# change escape character to X. I use ^a for beginning of line
+#bind a lockscreen
+#bind  lockscreen
+#defmonitor off
+#shelltitle '$ |bash'
+#termcapinfo xterm|xterms|xs|eterm|Eterm ti=\E7\E[?47l
+
+#shell -/bin/zsh
+
+#bindkey "\033[1;2D" prev
+#bindkey "\033[1;2C" next
+
+bindkey "\033[[d" prev
+bindkey "\033[[c" next
+
+
+
