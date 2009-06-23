@@ -1,4 +1,3 @@
-#
 
 # skip the startup message
 startup_message off
@@ -68,9 +67,12 @@ login on
 
 #shell -/bin/zsh
 
-#bindkey "\033[1;2D" prev
-#bindkey "\033[1;2C" next
+# shift-left / shift-right
+# gnome-terminal
+bindkey "\033[1;2D" prev
+bindkey "\033[1;2C" next
 
+# urxvt
 bindkey "\033[[d" prev
 bindkey "\033[[c" next
 
