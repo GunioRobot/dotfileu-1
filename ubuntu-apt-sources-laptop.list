@@ -1,0 +1,128 @@
+# deb cdrom:[Ubuntu 8.10 _Intrepid Ibex_ - Beta i386 (20081001)]/ intrepid main restricted
+# See http://help.ubuntu.com/community/UpgradeNotes for how to upgrade to
+# newer versions of the distribution.
+
+deb http://archive.ubuntu.com/ubuntu/ intrepid main restricted
+deb-src http://archive.ubuntu.com/ubuntu/ intrepid main restricted
+
+deb http://archive.ubuntu.com/ubuntu/ intrepid-updates main restricted
+deb-src http://archive.ubuntu.com/ubuntu/ intrepid-updates main restricted
+
+## Major bug fix updates produced after the final release of the
+## distribution.
+
+## N.B. software from this repository is ENTIRELY UNSUPPORTED by the Ubuntu
+## team, and may not be under a free licence. Please satisfy yourself as to
+## your rights to use the software. Also, please note that software in
+## universe WILL NOT receive any review or updates from the Ubuntu security
+## team.
+deb http://archive.ubuntu.com/ubuntu/ intrepid universe
+deb-src http://archive.ubuntu.com/ubuntu/ intrepid universe
+
+deb http://archive.ubuntu.com/ubuntu/ intrepid-updates universe
+deb-src http://archive.ubuntu.com/ubuntu/ intrepid-updates universe
+
+## N.B. software from this repository is ENTIRELY UNSUPPORTED by the Ubuntu 
+## team, and may not be under a free licence. Please satisfy yourself as to 
+## your rights to use the software. Also, please note that software in 
+## multiverse WILL NOT receive any review or updates from the Ubuntu
+## security team.
+deb http://archive.ubuntu.com/ubuntu/ intrepid multiverse
+deb-src http://archive.ubuntu.com/ubuntu/ intrepid multiverse
+
+deb http://archive.ubuntu.com/ubuntu/ intrepid-updates multiverse
+deb-src http://archive.ubuntu.com/ubuntu/ intrepid-updates multiverse
+
+## Uncomment the following two lines to add software from the 'backports'
+## repository.
+## N.B. software from this repository may not have been tested as
+## extensively as that contained in the main release, although it includes
+## newer versions of some applications which may provide useful features.
+## Also, please note that software in backports WILL NOT receive any review
+## or updates from the Ubuntu security team.
+# deb http://rs.archive.ubuntu.com/ubuntu/ intrepid-backports main restricted universe multiverse
+# deb-src http://rs.archive.ubuntu.com/ubuntu/ intrepid-backports main restricted universe multiverse
+
+## Uncomment the following two lines to add software from Canonical's
+## 'partner' repository. This software is not part of Ubuntu, but is
+## offered by Canonical and the respective vendors as a service to Ubuntu
+## users.
+deb http://archive.canonical.com/ubuntu intrepid partner
+deb-src http://archive.canonical.com/ubuntu intrepid partner
+
+#deb http://archive.canonical.com/ubuntu intrepid-commercial main
+
+# skype
+# deb http://download.skype.com/linux/repos/debian/ stable non-free
+# /skype
+
+
+# VirtualBox
+# wget -q http://download.virtualbox.org/virtualbox/debian/sun_vbox.asc -O- | sudo apt-key add -
+# deb http://download.virtualbox.org/virtualbox/debian hardy non-free
+deb http://download.virtualbox.org/virtualbox/debian intrepid non-free
+# /VirtualBox
+
+# zfs-fuse
+#deb http://ppa.launchpad.net/brcha/ubuntu intrepid main
+# /zfs-fuse
+
+# freenukum
+deb http://ppa.launchpad.net/freenukum/ppa/ubuntu intrepid main
+deb-src http://ppa.launchpad.net/freenukum/ppa/ubuntu intrepid main
+#  wget -O- -c 'http://keyserver.ubuntu.com:11371/pks/lookup?op=get&search=0x62BEABAB95D3FC2D' | apt-key add -
+# /freenukum
+
+# zgegblog-themes
+# http://www.ubuntugeek.com/nice-ubuntu-themes-for-jaunty-and-intrepid-users.html
+deb http://ppa.launchpad.net/bisigi/ppa/ubuntu intrepid main
+deb-src http://ppa.launchpad.net/bisigi/ppa/ubuntu intrepid main
+# sudo apt-key adv --recv-keys --keyserver keyserver.ubuntu.com 0x1781bd45c4c3275a34bb6aec6e871c4a881574de
+# sudo aptitude install zgegblog-themes
+# /zgegblog-themes
+
+# parrot
+deb http://ppa.launchpad.net/parrot-dev/ppa/ubuntu intrepid main
+deb-src http://ppa.launchpad.net/parrot-dev/ppa/ubuntu intrepid main
+# sudo apt-key adv --recv-keys --keyserver keyserver.ubuntu.com 0xEA78A20CE77C62BA7F7B3969DB540AD95FE0A084
+# /parrot
+
+
+# screen-profiles
+deb http://ppa.launchpad.net/byobu/ppa/ubuntu intrepid main
+deb-src http://ppa.launchpad.net/byobu/ppa/ubuntu intrepid main
+# sudo apt-key adv --recv-keys --keyserver keyserver.ubuntu.com 0xA42A415B4677D2D22EB05723CF5E7496F430BBA5
+# /screen-profiles
+
+# gwibber
+deb http://ppa.launchpad.net/gwibber-team/ubuntu intrepid main
+deb-src http://ppa.launchpad.net/gwibber-team/ubuntu intrepid main
+# sudo apt-key adv --recv-keys --keyserver keyserver.ubuntu.com         5AFADBD4AA1C92B0 |sudo apt-key add -
+# sudo apt-get install gwibber
+# /gwibber
+
+
+# boxee
+deb http://apt.boxee.tv intrepid main 
+# /boxee
+
+
+# medibuntu
+## Please report any bug on https://bugs.launchpad.net/medibuntu/
+deb http://packages.medibuntu.org/ intrepid free non-free #Medibuntu - Ubuntu 8.10 "intrepid ibex"
+deb-src http://packages.medibuntu.org/ intrepid free non-free #Medibuntu (source) - Ubuntu 8.10 "intrepid ibex"
+# apt-get install medibuntu-keyring
+# armnb armwb googleearth libarmnb3 libarmwb3 libdvdcss2 mencoder
+# mplayer mplayer-nogui skype skype-static realplayer
+# non-free-codecs w32codecs w64codecs
+# /medibuntu
+
+# for uzbl
+# from http://blog.duwanis.com/past/2009/5/17/installing_uzbl_on_ubuntubased_distros/
+deb http://ppa.launchpad.net/webkit-team/ppa/ubuntu intrepid main
+deb-src http://ppa.launchpad.net/webkit-team/ppa/ubuntu intrepid main
+# sudo apt-key adv --recv-keys --keyserver keyserver.ubuntu.com 0x991e6cf92d9a3c5b
+# sudo apt-get install git git-core libwebkit-dev
+# git clone git://github.com/Dieterbe/uzbl.git
+# /uzbl
+
